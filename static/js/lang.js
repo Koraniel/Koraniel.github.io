@@ -9,9 +9,15 @@ const translations = {
       contact_me_button: "Contact me",
       dark_light_theme_button: "Dark/White theme",
       header1: "This is my site made for Deep Python course",
-      text1: "Я&nbsp;&mdash; студент Высшей Школы Экономики, ПМИ ФКН ВШЭ, <br> Учусь хорошо, мечтаю начать ходить на покру.",
+      text1: "I am a student at the Higher School of Economics, AMI FCS HSE. I study well, and I dream of starting to take classes offline.",
       contact_me_button2: "Contact me",
-
+      about_me: "About me",
+      about_me_text: "I am a bachelor's student in \"Applied Mathematics and Information Science\" at the Faculty of Computer Science at the Higher School of Economics. I am interested in everything that can be described by mathematics. Was an intern at Huawei RRI.",
+      education_header: "Education",
+      university: "HSE University",
+      period_of_education1: "September 2023 – June 2027",
+      description_of_degree: "I study mathematics and programming. I plan to go to the Stiolo",
+       
     },
     ru: {
       tab_header: "Кораниэль",
@@ -23,9 +29,15 @@ const translations = {
       contact_me_button: "Написать мне",
       dark_light_theme_button: "Тёмная/Светлая тема",
       header1: "Это сайт-визитка для ДЗ по углубленному питону",
-      text1: "Я&nbsp;&mdash; студент Высшей Школы Экономики, ПМИ ФКН ВШЭ, <br> Учусь хорошо, мечтаю начать ходить на покру.",
+      text1: "Я - студент Высшей Школы Экономики, ПМИ ФКН ВШЭ, Учусь хорошо, мечтаю начать ходить на покру.",
       contact_me_button2: "Написать мне",
-      
+      about_me: "Обо мне",
+      about_me_text: "Я студент бакалавриата \"Прикладная Математика и Информатика\" факультета компьютерных наук ВШЭ. Интересуюсь всем, что может быть описано математикой. Стажировался в Хуавее.",
+      education_header: "Образование",
+      university: "НИУ ВШЭ",
+      period_of_education1: "Сентябрь 2023 – Июнь 2027",
+      description_of_degree: "Занимаюсь изучением математики и программирования. Планирую идти на МОП",
+
     },
   };
   
