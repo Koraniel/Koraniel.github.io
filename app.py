@@ -2,10 +2,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def main():
-    return render_template("index.html")
+    return render_template("templates/index.html")
+
+# @app.route("/")
+# def main():
+#     return render_template("templates/ru_index.html")
+
+# @app.route("/en")
+# def main():
+#     return render_template("templates/en_index.html")
 
 
 @app.errorhandler(404)

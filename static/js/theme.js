@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.querySelector("#theme-toggle");
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  
-    // Проверка сохраненной темы в localStorage
+    
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark" || (currentTheme === null && prefersDarkScheme.matches)) {
       document.body.classList.add("dark-theme");
