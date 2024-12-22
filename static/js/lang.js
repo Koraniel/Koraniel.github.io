@@ -27,6 +27,7 @@ const translations = {
       partnership_text: "If you are interested in what I can do for you, here is my contact information:",
       telegram_button: "Write in Telegram",
       email_button: "Email me",
+      footer: "Made with coffe in the middle of the second year at the University.",
     },
     ru: {
       tab_header: "Кораниэль",
@@ -56,6 +57,7 @@ const translations = {
       partnership_text: "Если интересно, что я могу для вас сделать, пишите:",
       telegram_button: "Написать в Telegram",
       email_button: "Написать на почту",
+      footer: "Cделано с кофе в сессию 2 курса.",
     },
   };
   
