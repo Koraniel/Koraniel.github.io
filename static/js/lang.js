@@ -20,8 +20,13 @@ const translations = {
       exp_header: "Experience",
       work1: "Huawei RRI",
       period_of_work1: "July 2024 – September 2024",
-      description_of_work1: "Tortured PyTorch",
-      
+      description_of_work1: "Tortured PyTorch as an intern",
+      skills_header: "Skills",
+      description_of_skills: "Python, C, Pillow, PyTest, Multiprocessing & Threading, Asyncio, Git, LaTeX",
+      partnership_header: "Partnership",
+      partnership_text: "If you are interested in what I can do for you, here is my contact information:",
+      telegram_button: "Write in Telegram",
+      email_button: "Email me",
     },
     ru: {
       tab_header: "Кораниэль",
@@ -44,8 +49,13 @@ const translations = {
       exp_header: "Опыт работы",
       work1: "Huawei RRI",
       period_of_work1: "Июль 2024 – Сентябрь 2024",
-      description_of_work1: "Мучал пайторч",
-
+      description_of_work1: "Мучал пайторч в качестве стажера",
+      skills_header: "Навыки",
+      description_of_skills: "Python, C, Pillow, PyTest, Multiprocessing & Threading, Asyncio, Git, LaTeX",
+      partnership_header: "Сотрудничество",
+      partnership_text: "Если интересно, что я могу для вас сделать, пишите:",
+      telegram_button: "Написать в Telegram",
+      email_button: "Написать на почту",
     },
   };
   
