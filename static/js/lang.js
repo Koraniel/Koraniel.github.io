@@ -1,9 +1,11 @@
 const translations = {
     en: {
       tab_header: "Koraniel",
+      full_name: "Lev Rymarev",
     },
     ru: {
       tab_header: "Кораниэль",
+      full_name: "Рымарев Лев"
     },
   };
   
