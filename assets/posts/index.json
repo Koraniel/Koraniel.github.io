@@ -1,0 +1,32 @@
+{
+  "default_lang": "en",
+  "items": [
+    {
+      "slug": "onset-dataset-baseline",
+      "title_en": "How I built a robust guitar-onset dataset",
+      "title_ru": "Как я собрал устойчивый датасет онсетов гитары",
+      "date": "2025-07-20",
+      "summary_en": "Notes on labeling, hard negatives, and augmentations.",
+      "summary_ru": "Заметки о разметке, отрицательных примерах и аугментациях.",
+      "tags": [
+        "audio-ml",
+        "datasets",
+        "research"
+      ],
+      "og_image": "assets/img/og-post-onset.png"
+    },
+    {
+      "slug": "japan-masters-checklist",
+      "title_en": "Checklist: applying to Japanese master’s in statistics",
+      "title_ru": "Чеклист: поступление в магистратуру по статистике в Японии",
+      "date": "2025-07-26",
+      "summary_en": "Deadlines, statements, recommendation letters, and funding routes.",
+      "summary_ru": "Дедлайны, мотивации, рекомендации и варианты финансирования.",
+      "tags": [
+        "grad-school",
+        "guides"
+      ],
+      "og_image": "assets/img/og-post-japan.png"
+    }
+  ]
+}

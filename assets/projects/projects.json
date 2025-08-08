@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "slug": "guitar-onset-cnns",
+      "title_en": "Guitar Onset CNNs",
+      "title_ru": "CNN для онсетов гитары",
+      "year": 2025,
+      "tags": [
+        "audio-ml",
+        "pytorch"
+      ],
+      "summary_en": "Training CNNs for guitar onset detection with curated negatives.",
+      "summary_ru": "Обучение CNN для детекции онсетов гитары с контролируемыми негативами.",
+      "images": [
+        "assets/img/proj-onset-1.png",
+        "assets/img/proj-onset-2.png"
+      ],
+      "link": "https://github.com/your-username/guitar-onset-cnns",
+      "og_image": "assets/img/og-proj-onset.png"
+    },
+    {
+      "slug": "stats-notes",
+      "title_en": "Statistics Notes (RU)",
+      "title_ru": "Конспекты по статистике (RU)",
+      "year": 2024,
+      "tags": [
+        "stats",
+        "notes"
+      ],
+      "summary_en": "Complete lecture-style notes with proofs and exercises.",
+      "summary_ru": "Полные лекционные конспекты с доказательствами и задачами.",
+      "images": [
+        "assets/img/proj-stats-1.png"
+      ],
+      "link": "#",
+      "og_image": "assets/img/og-proj-stats.png"
+    }
+  ]
+}

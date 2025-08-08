@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Your Name — Blog / Ваше Имя — Блог</title>
+  <link href="https://example.github.io/portfolio/feed.xml" rel="self"/>
+  <link href="https://example.github.io/portfolio/blog.html"/>
+  <updated>2025-07-26T00:00:00Z</updated>
+  <id>https://example.github.io/portfolio/</id>
+  <entry>
+    <title>How I built a robust guitar-onset dataset</title>
+    <link href="https://example.github.io/portfolio/post.html?slug=onset-dataset-baseline"/>
+    <id>https://example.github.io/portfolio/post.html?slug=onset-dataset-baseline</id>
+    <updated>2025-07-20T00:00:00Z</updated>
+    <summary>Notes on labeling, hard negatives, and augmentations.</summary>
+  </entry>
+  <entry>
+    <title>Checklist: applying to Japanese master’s in statistics</title>
+    <link href="https://example.github.io/portfolio/post.html?slug=japan-masters-checklist"/>
+    <id>https://example.github.io/portfolio/post.html?slug=japan-masters-checklist</id>
+    <updated>2025-07-26T00:00:00Z</updated>
+    <summary>Deadlines, statements, recommendation letters, and funding routes.</summary>
+  </entry>
+</feed>

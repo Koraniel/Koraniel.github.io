@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2025-07-16",
+    "title": "Started audio onset detection project",
+    "description": "Built a reproducible dataset and baseline CNN in PyTorch."
+  },
+  {
+    "date": "2024-09-15",
+    "title": "Internship at Huawei RRI",
+    "description": "Worked on research tooling and model evaluation."
+  },
+  {
+    "date": "2023-09-01",
+    "title": "Started BSc at HSE",
+    "description": "Applied Math & CS track; focus on ML/statistics."
+  }
+]

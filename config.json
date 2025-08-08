@@ -4,7 +4,7 @@
     "title_ru": "Ваше Имя — Портфолио",
     "description_en": "Researcher • ML Engineer • Open-Source Enthusiast",
     "description_ru": "Исследователь • ML-инженер • Энтузиаст Open-Source",
-    "base_url": "https://<USERNAME>.github.io/<REPO>",
+    "base_url": "https://example.github.io/portfolio",
     "default_lang": "en",
     "email": "you@example.com",
     "telegram": "https://t.me/your_handle",
@@ -26,7 +26,11 @@
     "username": "your-username",
     "repo_fetch_limit": 8,
     "exclude_forks": true,
-    "min_stars": 0
+    "min_stars": 0,
+    "pinned": [
+      "your-username/your-top-repo",
+      "your-username/another-repo"
+    ]
   },
   "features": {
     "enable_pwa": true,
@@ -35,6 +39,22 @@
     "enable_publications": true,
     "enable_open_graph": true,
     "enable_structured_data": true,
-    "enable_dark_mode": true
+    "enable_dark_mode": true,
+    "enable_blog": true,
+    "enable_projects": true,
+    "enable_pub_filters": true,
+    "enable_site_search": true
+  },
+  "form": {
+    "service": "mailto",
+    "endpoint": ""
+  },
+  "embeds": {
+    "twitter_username": "TwitterDev",
+    "telegram_channel": "durov"
+  },
+  "feeds": {
+    "site_title_en": "Your Name — Blog",
+    "site_title_ru": "Ваше Имя — Блог"
   }
 }

@@ -1,43 +1,46 @@
 
-# Portfolio Site (RU/EN, Warm Terracotta)
+# Portfolio Site (RU/EN, Warm Terracotta) — Extended
 
-A clean, customizable personal site for GitHub Pages with:
-- RU/EN language support (static `index.html` for EN and `ru.html` for RU for correct OG sharing)
-- Warm/terracotta palette, light/dark theme toggle
-- Open Graph + Twitter card + favicons
-- Timeline/achievements, education, publications, repositories (via GitHub API)
-- PWA (manifest + service worker)
-- Sitemap, robots, 404
-- Structured data (schema.org/Person)
-- Download CV button per language
+Includes: Blog (RU/EN titles), Projects with gallery, RSS feed, static OG pages generator, timeline import (JSON/CSV),
+publications filters, pinned repos, KaTeX math (CDN), PWA, sitemap/robots/404, structured data, and contact form integrations.
 
 ## Quick Start
+1. Edit `config.json` — set `site.base_url`, socials, `github.username`, `form` settings if needed.
+2. Replace images and CVs in `assets/img/*` and `assets/cv/*`.
+3. Push to GitHub and enable Pages (branch: main, folder: /).
 
-1. **Update URLs and data**
-   - Edit `config.json`:
-     - `site.base_url` → your GitHub Pages URL (no trailing slash)
-     - Social links, email, etc.
-     - `github.username` → your GitHub handle.
-2. **Replace images and CV**
-   - `assets/img/avatar.png` with your photo/logo.
-   - `assets/img/og-image-*.png` for prettier shares (1200×630).
-   - `assets/cv/cv_en.pdf`, `assets/cv/cv_ru.pdf` with your actual CVs.
-3. **Publish to GitHub Pages**
-   - Create a repo `<REPO>` on your GitHub account.
-   - Push these files.
-   - In repo settings → Pages, publish from the `main` branch root.
-   - Your site becomes available at `https://<USERNAME>.github.io/<REPO>/`.
+## Blog
+- Posts live in `assets/posts/*.md` (simple Markdown).
+- Update `assets/posts/index.json` when adding posts.
+- View: `/blog.html`; individual: `/post.html?slug=your-slug`.
+- Math supported via KaTeX CDN (edit HTML to self-host if needed).
 
-### Customize Sections
+## RSS
+- Run `python3 tools/build_feed.py` locally to regenerate `feed.xml` after changing posts.
+- Readers subscribe to `<base_url>/feed.xml`.
 
-- Text lives in `assets/i18n/en.json` and `assets/i18n/ru.json`.
-- Add items to `education.items`, `publications.items`, `timeline.items`, `goals.items`.
-- Repositories auto-load from GitHub; tune filters in `config.json` (`min_stars`, `exclude_forks`, `repo_fetch_limit`).
+## Projects
+- Data in `assets/projects/projects.json` (see fields in sample).
+- Page `/projects.html` supports search & year filter. Click thumbnails for lightbox.
 
-### Notes
+## Timeline import
+- If `assets/data/timeline.json` or `assets/data/timeline.csv` exists, it overrides timeline in i18n.
 
-- OG tags are static in the HTML for each language page, so sharing `index.html` → EN card, `ru.html` → RU card.
-- The contact form is static; it opens your email client with `mailto:`. Integrations like Formspree can be added if needed.
-- If you use a custom domain, put the domain in a `CNAME` file at repo root.
+## Publications filters
+- Year parsed from `venue` (e.g., "... 2024"); search box filters by author/title/tag.
+
+## Pinned repos
+- `config.json` → `github.pinned` as array of `"owner/name"` strings. Rendered above auto list.
+
+## Contact
+- Default `mailto`. For Formspree: `"form": {"service":"formspree","endpoint":"https://formspree.io/f/XXXX"}`
+- For StaticForms: `"form":{"service":"staticforms","endpoint":"YOUR_ACCESS_KEY"}`
+
+## Static OG pages
+- Run: `python3 tools/generate_og_pages.py`. Commits `og-post-*.html` / `og-proj-*.html`.
+- Share these URLs if a crawler ignores JS.
+
+## PWA
+- `site.webmanifest` + `sw.js` included. Registers automatically.
 
 MIT License.
