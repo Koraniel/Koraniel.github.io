@@ -1,164 +1,63 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet", crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/custom.css">
-    <title data-key="tab_header"> Кораниэль </title>
-  </head>
-  <body>
-    <!-- Секция промо с темным фоном - шапка сайта -->
-    <section class="promo dark-bg pt-2 pb-5">
-      <div class="container">
-        <!-- Навигационная панель с логотипом и кнопкой -->
-        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
-          <div class="container-fluid">
-            <a href="#" class="navbar-brand logo d-flex align-items-center text-decoration-none">
-              <div class="logo-left pe-2">
-                <!-- Здесь вставьте ваш логотип/фотку, ее можно скруглять и увеличивать в размере-->
-                <img src="static/avatar.png" alt="" class="rounded-circle" width="70">
-              </div>
-              <div class="logo-right" style="margin-left: 6px;">
-                <div data-key="full_name" class="logo-title link-purple">Рымарев Лев</div>
-                <div data-key="occupation" class="logo-subtitle text-yellow">Студент ПМИ ФКН ВШЭ</div>
-              </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Меню навигации -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="nav m-auto">
-                <li class="nav-item mx-3">
-                  <a data-key="about_me_button" href="#story" class="nav-link link-purple link-border-bottom">Вкратце обо мне</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a data-key="job_exp_button" href="#projects" class="nav-link link-purple link-border-bottom">Мой опыт работы</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a data-key="partnership_button" href="#contact" class="nav-link link-purple link-border-bottom">Сотрудничество</a>
-                </li>
-              </ul>
-              <ul class="nav ml-auto">
-                <li class="nav-item mx-3">
-                  <a href="https://github.com/Koraniel" class="nav-link link-purple link-border-bottom">Github</a>
-                </li>
-                <li class="nav-item mx-3 mr-0">
-                  <a data-key="contact_me_button" href="#contact" class="nav-link link-purple link-border-bottom">Написать мне</a>
-                </li>
-              </ul>
-              <button data-key="dark_light_theme_button" id="theme-toggle" class="btn btn-blue">Тёмная/Светлая тема</button>
-              <div id="theme-lang" class="d-flex justify-content-end mb-3">
-                <button class="btn btn-outline-primary mx-1" data-lang="ru">RU</button>
-                <button class="btn btn-outline-primary mx-1" data-lang="en">EN</button>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-         <!-- Блок приветствия с основной информацией -->
-        <div class="row py-0 py-sm-5">
-          <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
-            <h1 data-key="header1" class="h1 font-weight-bold font greeting-text text-blue">Это сайт-визитка для ДЗ по углубленному питону</h1>
-            <p data-key="text1" class="promo-text pb-3">Я&nbsp;&mdash; студент Высшей Школы Экономики, ПМИ ФКН ВШЭ, <br> Учусь хорошо, мечтаю начать ходить на покру. </p>
-            <a data-key="contact_me_button2" href="#contact" class="btn text-center" style="background-color: #DCFF05; color: #102D69">Написать мне</a>
-          </div>
-        </div>
+<!doctype html>
+      <div class="section-hd">
+        <h2 data-i18n="contact.h">Контакты</h2>
+        <div class="sub" data-i18n="contact.sub">Свяжитесь любым удобным способом.</div>
       </div>
-    </section>
-     <!-- Секция "Обо мне" -->
-    <section class="story container py-5 text-center" id="story">
-      <h2 data-key="about_me" class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 navigo-font">Обо мне</h2>
-      <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2 px-2 pb-5">
-          <p data-key="about_me_text" class="font-weight-bold pb-4">Я &mdash; обычный студент (здесь напишите о себе); 
-        </div>
-      </div>
-    </section>
-     <!-- Секция образования с темным фоном -->
-    <section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
-      <div class="container">
-        <h2 data-key="education_header" class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font">Мой опыт работы</h2>
-        
-        <div class="education text-white">
-          <div class="d-flex align-items-center mb-4">
-            <img src="../static/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png" alt="HSE Logo" class="me-3" style="height: 60px; margin-top: -6px;">
-            <div class="d-flex flex-column justify-content-center">
-              <h3 data-key="university" class="h4 mb-1">НИУ «ВШЭ»</h3>
-              <p data-key="period_of_education1" class="text-white-40 mb-0">Сентябрь 2022 – Настоящее время</p>
-            </div>
-          </div>
-          
-          <div class="position mb-4" style="margin-left: 20px;">
-            <p data-key="description_of_degree">Занимаюсь изучением математики и программирования.</p>
-          </div>
-      </div>
-    </section>
 
-
-    <section class="goals container pt-3 pt-sm-5 pb-3">
-      <h2 data-key="exp_header" class="h2 font-weight-bold my-4">Опыт работы</h2>
-      
-      <div class="work-experience">
-        <div class="d-flex align-items-center mb-4">
-          <img src="static/huawei_logo.png" alt="Huawei Logo" class="me-3" style="height: 60px; margin-top: -6px;">
-          <div class="d-flex flex-column justify-content-center">
-            <h3 data-key="work1" class="h4 mb-1">Huawei RRI</h3>
-            <p data-key="period_of_work1" class="text-white-40 mb-0">Июль 2024 – Сентябрь 2024</p>
-          </div>
+      <div class="card">
+        <div class="socials">
+          <a href="mailto:you@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+            <span>you@example.com</span>
+          </a>
+          <a href="https://t.me/yourhandle" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.9 15.4 9.7 19c.4 0 .6-.2.8-.4l1.9-1.8 3.9 2.8c.7.4 1.2.2 1.4-.6l2.5-11c.3-1.1-.4-1.6-1.2-1.3L3.6 9.7c-1.1.4-1.1 1.1-.2 1.3l4.1 1.3 9.5-6-7.1 7.7Z"/></svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8 8h3.8v2.1h.1C12.8 8.6 14.6 7.5 17 7.5c4 0 4.7 2.6 4.7 6V23h-4v-6.3c0-1.5-.1-3.5-2.1-3.5-2.1 0-2.5 1.6-2.5 3.4V23H8z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.9 5.3.9 11.7c0 4.9 3.2 9.1 7.6 10.6.6.1.8-.3.8-.6v-2.2c-3.1.7-3.7-1.3-3.7-1.3-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 1.7 2.5 1.2.1-.8.4-1.4.8-1.8-2.5-.3-5.1-1.3-5.1-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C18 5.5 19 5.8 19 5.8c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.4-2.6 5.4-5.1 5.7.5.5.9 1.3.9 2.6v3.8c0 .3.2.7.8.6 4.4-1.5 7.6-5.7 7.6-10.6C23.1 5.3 18.3.5 12 .5Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=XXXXX" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 9l11 7 9-6.1V20h3V9z"/></svg>
+            <span>Google Scholar</span>
+          </a>
         </div>
-        
-        <div class="position mb-4" style="margin-left: 20px;">
-          <p data-key="description_of_work1">Мучал пайторч</p>
-        </div>
+        <p class="sub" style="margin-top:12px">Подсказка: для формы на GitHub Pages используйте <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> или <a href="https://formspark.io" target="_blank" rel="noopener">Formspark</a>.</p>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
-      <div class="container">
-        <h2 data-key="skills_header" class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font">Навыки</h2>
-        
-        <div class="education text-white">
-          <div class="position mb-4" style="margin-left: 20px;">
-            <p data-key="description_of_skills"></p>
-          </div>
+  <footer>
+    <div class="container">
+      <div class="grid two">
+        <div>© <span id="year"></span> · Ваше имя</div>
+        <div class="right">Сделано на тёплой палитре · <a href="#" id="printCv">Печать резюме</a></div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-     <!-- Секция сотрудничества -->
-    <section class="goals container mb-5 pb-sm-5 pb-0" id="contact">
-      <h2 data-key="partnership_header" class="h2 font-weight-bold my-4">Сотрудничество</h2>
-      <div class="row">
-        <div class="col-12 col-sm-8 pb-1">
-          <p data-key="partnership_text" class="pb-1 mb-1">Если интересно, что я могу для вас сделать, пишите:</p>
-          <!-- Блок с кнопками для связи -->
-          <div class="row">
-            <div class="col-12 col-sm-9">
-              <p class="d-flex justify-content-start gap-2 flex-wrap">
-                <a data-key="telegram_button" href="https://t.me/Koraniel" class="btn mb-3" style="background-color: #DCFF05; color: #102D69" target="_blank">Написать в Telegram</a>
-                <a data-key="email_button" href="mailto:lsrymarev@edu.hse.ru" class="btn mb-3" style="background-color: #DCFF05; color: #102D69" target="_blank">Написать на почту</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Подвал сайта с темным фоном -->
-    <footer class="footer dark-bg">
-      <nav class="container navbar ">
-        <ul class="nav m-auto py-2">
-          <li data-key="footer" class="nav-item mx-3">
-            Cделано с любовью в 2024 году.
-          </li>
-        </ul>
-      </nav>
-    </footer>
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ваше имя",
+    "url": "https://your-username.github.io/",
+    "sameAs": [
+      "mailto:you@example.com",
+      "https://t.me/yourhandle",
+      "https://www.linkedin.com/in/your-profile",
+      "https://github.com/your-username",
+      "https://scholar.google.com/citations?user=XXXXX"
+    ]
+  }
+  </script>
 
-    <!-- Подключение скриптов Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/theme.js"></script>
-    <script src="static/js/lang.js" defer></script>
-  </body>
+  <script defer src="assets/js/main.js"></script>
+</body>
 </html>

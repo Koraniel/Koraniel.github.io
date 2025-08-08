@@ -1,0 +1,71 @@
+/* ===============
+
+/* Hero */
+.hero{ position:relative; overflow:hidden }
+.hero-pad{ padding: clamp(40px, 9vw, 110px) 0 50px; display:grid; grid-template-columns: 1.1fr .9fr; gap:36px; align-items:center }
+.badge{ display:inline-flex; gap:8px; align-items:center; background: color-mix(in oklab, var(--accent) 20%, var(--surface)); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:13px }
+.hero h1{ font-size: clamp(30px, 5.5vw, 56px); line-height:1.1; margin:12px 0 10px }
+.hero p{ font-size: clamp(15px, 2vw, 18px); color:var(--muted); margin:0 0 20px }
+
+.cta{ display:flex; gap:12px; flex-wrap:wrap }
+.btn-primary{ background: linear-gradient(135deg, var(--accent), var(--accent-weak)); color:#fff; border:none }
+.btn-ghost{ background:transparent; border:1px solid var(--border) }
+
+.portrait{ width:100%; max-width:360px; margin-inline:auto; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--border); background: color-mix(in oklab, var(--surface) 70%, transparent) }
+
+/* Sections */
+section{ padding:70px 0; scroll-margin-top:80px }
+.section-hd{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:22px }
+.section-hd h2{ margin:0; font-size: clamp(22px, 3.2vw, 30px) }
+.sub{ color:var(--muted); font-size:14px }
+.grid{ display:grid; gap:16px }
+.card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow) }
+.kvs{ display:grid; gap:10px }
+.kv{ display:flex; gap:10px; align-items:baseline }
+.kv .k{ min-width:140px; color:var(--muted) }
+.kv .v{ font-weight:600 }
+
+/* Skills */
+.tags{ display:flex; gap:10px; flex-wrap:wrap }
+.tag{ background: color-mix(in oklab, var(--primary) 12%, var(--surface)); color: color-mix(in oklab, var(--text) 15%, black); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px }
+
+/* Timeline */
+.timeline{ position:relative; padding-left:24px }
+.timeline::before{ content:""; position:absolute; left:8px; top:0; bottom:0; width:2px; background:var(--border) }
+.tl-item{ position:relative; margin:14px 0 }
+.tl-item::before{ content:""; position:absolute; left:-2px; top:6px; width:10px; height:10px; border-radius:999px; background:var(--accent); box-shadow:0 0 0 3px color-mix(in oklab, var(--accent) 30%, transparent) }
+.tl-title{ font-weight:700 }
+.tl-meta{ color:var(--muted); font-size:14px }
+
+/* Publications */
+.pub{ display:grid; gap:6px; padding:14px; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--surface) 85%, transparent) }
+.pub .title{ font-weight:700 }
+.pub .meta{ color:var(--muted); font-size:14px }
+
+/* Testimonials */
+.quotes{ display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)) }
+blockquote{ margin:0; padding:16px; border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow) }
+blockquote footer{ margin-top:10px; color:var(--muted); font-size:14px }
+
+/* Socials */
+.socials{ display:flex; gap:12px; flex-wrap:wrap }
+.socials a{ display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border:1px solid var(--border); border-radius:999px; background:var(--surface); box-shadow:var(--shadow) }
+.socials svg{ width:18px; height:18px }
+
+/* Footer */
+footer{ border-top:1px solid var(--border); padding:20px 0 40px; color:var(--muted) }
+
+/* Utilities */
+.right{ text-align:right }
+.two{ grid-template-columns: repeat(2, 1fr) }
+.auto{ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) }
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-pad{ grid-template-columns:1fr }
+  .right{ text-align:left }
+  .burger{ display:block }
+  #mainnav{ position:absolute; top:56px; left:0; right:0; background:var(--surface); border-bottom:1px solid var(--border); display:none }
+  #mainnav.open{ display:block }
+  #mainnav ul{ flex-direction:column; padding:10px }
+}
