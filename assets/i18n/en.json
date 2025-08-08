@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "publications": "Publications",
+    "repositories": "Repositories",
+    "achievements": "Timeline",
+    "goals": "Goals",
+    "contact": "Contacts",
+    "download_cv": "Download CV",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "tagline": "I build reliable ML systems and do research.",
+    "cta_primary": "Get in touch",
+    "cta_secondary": "Explore my work"
+  },
+  "about": {
+    "title": "About Me",
+    "body_html": "<p>I’m a researcher and ML engineer focused on audio and signal processing, with an emphasis on robust datasets and practical learning setups. I care about clarity, strong baselines, and reproducibility.</p>"
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "period": "2023–2027 (expected)",
+        "place": "HSE University — Applied Math & CS (BSc)",
+        "details_html": "<ul><li>Focus: Statistics, ML, Optimization</li><li>Research lab experience</li></ul>"
+      },
+      {
+        "period": "2021",
+        "place": "International Physics Conference — Participant",
+        "details_html": "<p>Presented a poster on applied methods.</p>"
+      }
+    ]
+  },
+  "publications": {
+    "title": "Selected Publications",
+    "note": "A few representative entries. See Google Scholar for more.",
+    "items": [
+      {
+        "authors": "Your Name, A. Coauthor",
+        "title": "Onset Detection in Guitar Audio via Robust Augmentations",
+        "venue": "Workshop on Music Information Retrieval, 2024",
+        "link": "#",
+        "badge": "preprint"
+      },
+      {
+        "authors": "Your Name",
+        "title": "Statistical Consistency in Acoustic Onset Labeling",
+        "venue": "ArXiv, 2025",
+        "link": "#",
+        "badge": "arXiv"
+      }
+    ]
+  },
+  "repos": {
+    "title": "Repositories",
+    "desc": "Recent and notable projects from my GitHub."
+  },
+  "timeline": {
+    "title": "Achievements & Career",
+    "items": [
+      {
+        "date": "2025-07-16",
+        "title": "Started audio onset detection project",
+        "description": "Built a reproducible dataset and baseline CNN in PyTorch."
+      },
+      {
+        "date": "2024-09-15",
+        "title": "Internship at Huawei RRI",
+        "description": "Worked on research tooling and model evaluation."
+      },
+      {
+        "date": "2023-09-01",
+        "title": "Started BSc at HSE",
+        "description": "Applied Math & CS track; focus on ML/statistics."
+      }
+    ]
+  },
+  "goals": {
+    "title": "Goals",
+    "items": [
+      "Pursue a master's program in Japan (statistics/applied math).",
+      "Publish robust baselines and datasets for onset detection.",
+      "Contribute to open-source audio ML tooling."
+    ]
+  },
+  "contact": {
+    "title": "Contacts",
+    "desc_html": "<p>Feel free to reach out. I respond faster on Telegram.</p>",
+    "email_label": "Email",
+    "telegram_label": "Telegram",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "scholar_label": "Scholar"
+  },
+  "footer": {
+    "made_with": "Made with HTML/CSS/JS — Hosted on GitHub Pages"
+  }
+}
